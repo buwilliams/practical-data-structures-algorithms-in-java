@@ -1,4 +1,7 @@
-= Overview
+# Data Structures and Algorithms
+## Course Notes
+
+### Overview
 
 - Two resources (memory areas): stack, heap
 - Primitive data types, class/object variable, reference variables
@@ -19,7 +22,7 @@
 	- many instances to the same class
 	- stored in the heap
 
-= Session 2, Lecture 8 - Big O Notation
+### Session 2, Lecture 8 - Big O Notation
 
 - constant time
 - linear time, single loop, O(n)
@@ -31,35 +34,35 @@
 - there are many problems that don't have a good algorithms
 - Analysis of Algorithms, number of the steps or iterations
 
-= Stack
+### Stack
 
 - LIFO: Last in, first out
 - push() to top
 - pop() from top
 - Algorithm: reverse the the letters in a word
 
-= Queue
+### Queue
 
 - FIFO: first in, first out
 
-= LinkedList
+### LinkedList
 
 - grow as large as needed
 - insert data at any point
 - uses pointers instead of an array
 - only needs a reference to starting node, uses while loops to traverse
 
-= SinglyLinkedList
+### SinglyLinkedList
 
 - not efficient for finding the last node
 - only has a reference to the first node
 
-= CircularLinkedList
+### CircularLinkedList
 
 - efficient for finding the last node
 - has a reference to the last node and the first node
 - queues and stacks can be implemented on the CircularLinkedList (instead of an array)
 
-= DoublyLinkedList
+### DoublyLinkedList
 
 - node has a reference to the next and the previous nodes
