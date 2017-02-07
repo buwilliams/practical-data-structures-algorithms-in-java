@@ -36,9 +36,9 @@ public class DoublyLinkedList {
 		last = newNode;
 	}
 	
-	// assume non-empty list
-	
 	public Node deleteFirst() {
+		if(isEmpty()) return null;
+		
 		Node currentFirst = first;
 		
 		if(first.next == null) {
@@ -53,6 +53,8 @@ public class DoublyLinkedList {
 	}
 	
 	public Node deleteLast() {
+		if(isEmpty()) return null;
+		
 		Node currentLast = last;
 		
 		if(first.next == null) {
@@ -64,5 +66,76 @@ public class DoublyLinkedList {
 		last = last.previous;
 		
 		return currentLast;
+	}
+	
+	// TODO: insertBefore()
+	
+	public Node insertAfter(int key, int data) {
+		Node current = first;
+		
+		while(current.data != key) {
+			current = current.next;
+			if(current.next == null) return null;
+		}
+		
+		Node newNode = new Node();
+		newNode.data = data;
+		
+		if(current == last) {
+			last = newNode;
+		} else {
+			newNode.next = current.next;
+			current.next.previous = newNode;
+		}
+		
+		current.next = newNode;
+		newNode.previous = current;
+		
+		return newNode;
+	}
+	
+	public Node deleteKey(int key) {
+		if(isEmpty()) return null;
+		
+		Node current = first;
+		
+		while(current.data != key) {
+			current = current.next;
+			if(current == null) return null;
+		}
+		
+		if(current == first) {
+			first = current.next;
+		} else {
+			current.previous.next = current.next;
+		}
+		
+		if(current == last) {
+			last = current.previous;
+		} else {
+			current.next.previous = current.previous;
+		}
+		
+		return current;
+	}
+	
+	public void displayForward() {
+		System.out.print("List (first -> last): ");
+		Node current = first;
+		while(current != null) {
+			current.displayNode();
+			current = current.next;
+		}
+		System.out.println("");
+	}
+	
+	public void displayBackward() {
+		System.out.print("List (last -> first)");
+		Node current = last;
+		while(current != null) {
+			current.displayNode();
+			current = current.previous;
+		}
+		System.out.println("");
 	}
 }

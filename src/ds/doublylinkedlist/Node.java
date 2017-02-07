@@ -6,6 +6,6 @@ public class Node {
 	Node previous;
 	
 	public void displayNode() {
-		System.out.println("{ " + data + " }");
+		System.out.print("{ " + data + " }");
 	}
 }
