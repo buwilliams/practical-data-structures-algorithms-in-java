@@ -4,6 +4,8 @@ In the book Programming Pearls, only 10% of candidates are able to implement bin
 
 In order for Binary Search to work the *data must be sorted*.
 
+Big O notation for Binary Search is O(log n), fastest algorithm we have for searching through a list of sorted elements.
+
 ## Details
 
 `[1][3][5][7][9][11][13][15][17][19]`
