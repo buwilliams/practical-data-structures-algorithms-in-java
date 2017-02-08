@@ -66,12 +66,8 @@
 
 ### DoublyLinkedList
 
-- node has a reference to the next and the previous nodes
-
-### CircularLinkedList
-
-- each node has a reference to the node before and after
-- the list has a reference to the first and last nodes
+- same as CircularLinkedList w/ references to the first and last nodes
+- but... each node has a reference to the node before and after
 
 ## Algorithms
 
