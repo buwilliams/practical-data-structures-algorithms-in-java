@@ -1,7 +1,6 @@
 # Data Structures and Algorithms
-## Course Notes
 
-### Overview
+## Java Memory
 
 - Two resources (memory areas): stack, heap
 - Primitive data types, class/object variable, reference variables
@@ -22,7 +21,7 @@
 	- many instances to the same class
 	- stored in the heap
 
-### Session 2, Lecture 8 - Big O Notation
+## Big O Notation (Session 2, Lecture 8)
 
 - constant time
 - linear time, single loop, O(n)
@@ -33,6 +32,8 @@
 - Asymptotic Notation (constant = O(1), linear = O(n), quadratic = O(n^2)
 - there are many problems that don't have a good algorithms
 - Analysis of Algorithms, number of the steps or iterations
+
+## Data Structures
 
 ### Stack
 
@@ -66,3 +67,35 @@
 ### DoublyLinkedList
 
 - node has a reference to the next and the previous nodes
+
+### CircularLinkedList
+
+- each node has a reference to the node before and after
+- the list has a reference to the first and last nodes
+
+## Algorithms
+
+### Recursion
+
+- uses a stack data structure, LIFO (last in first out)
+- requires a base case
+
+### Linear Search
+
+- Big O notation: O(n)
+
+### Binary Search
+
+- Big O notation: O(log n)
+- logarithms are n / 2 until = 1, counted repetitions
+- the logarithm will be based on the dominant thing that slows the algorithm down
+- all algorithms can be described as a mathematical equation
+
+## Sorting Algorithms
+
+### Selection Sort
+
+- Big O Notation: O(n^2)
+- Scans the entire array for smallest number
+- Moves the smallest number to the beginning
+- Starts over but from the second slot
