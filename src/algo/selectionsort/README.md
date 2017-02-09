@@ -1,5 +1,11 @@
 # Selection Sort
 
+## Description
+
+This algorithm does a linear search through an array looking for the smallest item and swaps it with the first element. Next, the position to be swapped is incremented. Finally, the process is repeated until the end of the array is reached.
+
+This algorithm has a growth rate (or complexity) of O(n^2) since there is one nested loop.
+
 ## Pseudo Code
 
 Procedure: Selection-Sort(A)
