@@ -10,7 +10,7 @@
 - Belongs to the family of divide and conquer algorithms
 - Can be implemented with recursion
 
-## Psuedo Code
+## Pseudo Code
 
 ```
 mergeSort(A, p, r) {
